@@ -1,0 +1,269 @@
+:root {
+  --theme-color: rgb(241, 114, 58);
+  --theme-color-alpha: rgba(241, 114, 58, 0.2);
+}
+
+body {
+  font-size: 1.7em;
+  font-family: -apple-system, "Helvetica Neue", "HelveticaNeue", Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+a:link {
+  color: var(--theme-color);
+  text-decoration: none;
+  background-color: transparent;
+}
+
+a:visited {
+  color: var(--theme-color);
+  text-decoration: none;
+  background-color: transparent;
+}
+
+a:hover {
+  color: var(--theme-color);
+  text-decoration: none;
+  background-color: var(--theme-color-alpha);
+}
+
+a:active {
+  color: var(--theme-color);
+  text-decoration: none;
+  background-color: var(--theme-color-alpha);
+}
+
+.section {
+  padding: 7rem 0rem 3rem 0rem;
+  padding-left: constant(safe-area-inset-left);
+  padding-right: constant(safe-area-inset-right);
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+  text-align: center;
+}
+
+.odd-section {
+  background-color: rgb(245, 245, 245);
+}
+
+.logo {
+  margin-top: -3rem;
+  margin-bottom: 5rem;
+}
+
+.icon {
+  max-width: 80px;
+  margin-bottom: 7px;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px 0 rgba(50, 50, 50, 0.3);
+}
+
+.phone {
+  max-width: 100%;
+}
+
+.pad {
+  max-width: 100%;
+  margin-bottom: 5rem;
+}
+
+.feature {
+  max-width: 100%;
+}
+
+.intro {
+  max-width: 100%;
+  margin-bottom: 5rem;
+}
+
+.darkMode {
+  max-height: 500px;
+  margin-bottom: 5rem;
+}
+
+.section-title {
+  margin-bottom: 1rem;
+}
+
+.section-subtitle {
+  color: #555555;
+  margin-bottom: 5rem;
+}
+
+.feature-title {
+  margin-top: 1rem;
+  margin-bottom: .3rem;
+}
+
+.feature-description {
+  color: #777777;
+  margin-bottom: 5rem;
+}
+
+.full-text {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.quote {
+  color: #000000;
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+.quote-source {
+  color: #777777;
+  text-align: left;
+}
+
+.badge {
+  max-width: 100%;
+}
+
+.footer-icon {
+  max-width: 100px;
+  margin-bottom: 7px;
+}
+
+.footer {
+  padding-top: 0rem;
+}
+
+.disclaimer {
+  color: #888888;
+  font-size: 1.3rem;
+  border-top: 1px #BBC2CB solid;
+  padding-top: 2.5rem;
+}
+
+.imageLink:link {
+  color: transparent;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.imageLink:visited {
+  color: transparent;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.imageLink:hover {
+  color: transparent;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.imageLink:Active {
+  color: transparent;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+
+
+@media (min-width: 1px) {
+  .phone {
+    max-width: 65%;
+  }
+
+  .feature {
+    max-width: 80%;
+  }
+
+  .full-text {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .badge {
+    max-width: 60%;
+  }
+}
+
+/* Larger than mobile */
+@media (min-width: 400px) {
+
+}
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+  .logo {
+    margin-top: 3rem;
+  }
+
+  .feature-description {
+    margin-bottom: 3rem;
+  }
+
+  .phone {
+    max-width: 100%;
+  }
+
+  .feature {
+    max-width: 100%;
+  }
+
+  .darkMode {
+    max-height: 400px;
+  }
+
+  .full-text {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .badge {
+    max-width: 100%;
+  }
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+  .logo {
+    margin-top: 5rem;
+  }
+
+  .pad {
+    max-width: 90%;
+  }
+
+  .darkMode {
+    max-height: 500px;
+  }
+
+  .full-text {
+    max-width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+  .logo {
+    margin-top: 7.5rem;
+  }
+
+  .icon {
+    max-width: 100px;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px 0 rgba(50, 50, 50, 0.3);
+  }
+
+  .pad {
+    max-width: 80%;
+  }
+
+  .full-text {
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
