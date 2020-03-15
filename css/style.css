@@ -188,7 +188,6 @@ a:active {
 
 /* Larger than mobile */
 @media (min-width: 400px) {
-
 }
 
 /* Larger than phablet */
@@ -265,5 +264,23 @@ a:active {
     max-width: 50%;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  body {
+    color: rgba(255, 255, 255, 0.8);
+    background-color: black;
+  }
+
+  .odd-section {
+    color: rgba(255, 255, 255, 0.8);
+    background-color: #2f2f31;
+  }
+
+  .section-subtitle {
+    color: #bebebe;
+    margin-bottom: 5rem;
   }
 }
