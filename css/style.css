@@ -139,6 +139,10 @@ a:active {
   padding-top: 2.5rem;
 }
 
+.disclaimer a {
+  color: #888888;
+}
+
 .imageLink:link {
   color: transparent;
   text-decoration: none;
